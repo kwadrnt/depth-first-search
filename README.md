@@ -60,7 +60,7 @@ Or, a recursive approach:
 
 1. If a node has no children (base case), just process the node itself.  
 
-2. If a node has children (recursive case), recursively traverse each child's subtree in a depth-first way.  When all of the children are finished, process the node.
+2. If a node has children (recursive case), recursively process each child's subtree in a depth-first way.  When all of the children are finished, process the node.
 
 #### Check for Understanding
 
@@ -108,9 +108,9 @@ Or, a recursive approach:
 	Once you finish your pseudocode, check it versus the pseudocode in [the solutions](solutions.md).
 
 
-1. Copy the starter code in either `tree.js` or `tree.rb`.  You'll see these files now have blanks and informal "tests" for depth-first search.  Fill in the depth-first search function in one of these files with actual code code. Run `node tree.js` or `ruby tree.rb` to see the informal tests work on your file.
+1. Copy the starter code in either `tree.js` or `tree.rb`.  You'll see these files have blanks and "driver code" (basically informal tests) for depth-first search.  Fill in the depth-first search function in one of these files with actual code. Run `node tree.js` or `ruby tree.rb` to see the output from the file.
 
-	Note: The Ruby solution only has an iterative version.  The JavaScript solution has an iterative and a recursive version. To see the output from only the recursive version in the Terminal, use `node tree-solution.js recursive`. For iterative only, use `node tree-solution.js iterative`.
+	Note: The Ruby solution only has an iterative version, even though it's possible to write a recursive solution with Ruby.  The JavaScript solution has an iterative and a recursive version. To see the output from only the recursive version in the Terminal, use `node tree-solution.js recursive`. For iterative only, use `node tree-solution.js iterative`.
 
 1. A trie is a kind of tree that stores sequential data like words or phone numbers. Each item in the sequence is an edge of the tree, and some nodes are marked as the end of a sequence.  A common example is storing words.  Here's an example storing words:
 
