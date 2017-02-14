@@ -43,11 +43,10 @@
 
 	```python
 
-	def depth_first_search(tree, targetKey) {
+	def depth_first_search(tree, targetKey):
 		stack = [tree]
 
-		while stack.length != 0:
-			# peek at top item in the stack
+		while len(stack) != 0:  # continue until empty
 			current = stack.pop()  # last thing in stack
 
 			# this might be the one we were looking for
