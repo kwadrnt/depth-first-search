@@ -49,9 +49,9 @@ Here's a rundown of depth-first tree traversal:
 
 1. Set up a stack to track which nodes to visit.
 
-1. Add the root to the stack.
+2. Add the root to the stack.
 
-1. Until the stack is empty, process the top node in the stack with the following steps:
+3. Until the stack is empty, process the top node in the stack with the following steps:
 	- pop the node from the top of the stack
 	- push the node's children onto the top of the stack
 	- do whatever additional processing you'd like!
@@ -89,7 +89,7 @@ Or, a recursive approach:
   ```
   </details>
 
-1. What is the Big-O runtime complexity of depth-first traversal?
+2. What is the Big-O runtime complexity of depth-first traversal?
 
 
 
@@ -99,7 +99,7 @@ Or, a recursive approach:
 1. In English, describe how you would use depth-first search to determine whether any node in a tree has a given key. Your algorithm should assume you have a tree data structure and that you can access each node's key its array of children. (Do not assume it's a binary search tree.) You should also assume you're given a target key to match.
 
 
-1. On the whiteboard, pseudocode a depth-first search function. As usual, assume you have a tree data structure that allows the following operations:
+2. On the whiteboard, pseudocode a depth-first search function. As usual, assume you have a tree data structure that allows the following operations:
 
 	* given a tree/node `my_tree`, get the root of the tree with `my_tree`
 	* given a tree/node, get the key of the node with `.key`
@@ -108,15 +108,15 @@ Or, a recursive approach:
 	Once you finish your pseudocode, check it versus the pseudocode in [the solutions](solutions.md).
 
 
-1. Copy the starter code in either `tree.js` or `tree.rb`.  You'll see these files have blanks and "driver code" (basically informal tests) for depth-first search.  Fill in the depth-first search function in one of these files with actual code. Run `node tree.js` or `ruby tree.rb` to see the output from the file.
+3. Copy the starter code in either `tree.js` or `tree.rb`.  You'll see these files have blanks and "driver code" (basically informal tests) for depth-first search.  Fill in the depth-first search function in one of these files with actual code. Run `node tree.js` or `ruby tree.rb` to see the output from the file.
 
 	Note: The Ruby solution only has an iterative version, even though it's possible to write a recursive solution with Ruby.  The JavaScript solution has an iterative and a recursive version. To see the output from only the recursive version in the Terminal, use `node tree-solution.js recursive`. For iterative only, use `node tree-solution.js iterative`.
 
-1. A trie is a kind of tree that stores sequential data like words or phone numbers. Each item in the sequence is an edge of the tree, and some nodes are marked as the end of a sequence.  A common example is storing words.  Here's an example storing words:
+4. A trie is a kind of tree that stores sequential data like words or phone numbers. Each item in the sequence is an edge of the tree, and some nodes are marked as the end of a sequence.  A common example is storing words.  Here's an example storing words:
 
 
   <img src="https://cloud.githubusercontent.com/assets/3254910/19540693/16236202-9616-11e6-93d3-5d54f94e8b5d.png" width="40%" alt="trie">
 
   **How would you use depth-first traversal to print out all of the words in a trie?**
 
-1. When would you use depth-first traversal, and when would you use breadth first traversal?
+5. When would you use depth-first traversal, and when would you use breadth first traversal?
